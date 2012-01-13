@@ -14,6 +14,9 @@
 
 @implementation PRPViewController
 
+@synthesize recipeTitle = _recipeTitle;
+@synthesize recipe = _recipe;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -29,6 +32,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.recipeTitle.text = self.recipe.title;
 }
 
 @end

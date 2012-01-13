@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PRPRecipe.h"
 
 @interface PRPViewController : UIViewController
+
+@property(nonatomic, strong) IBOutlet UILabel *recipeTitle;
+@property(nonatomic, strong) PRPRecipe *recipe;
 
 @end

@@ -15,6 +15,7 @@
 		97258ECA14BD29C400E92184 /* PRPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97258EC914BD29C400E92184 /* PRPAppDelegate.m */; };
 		97258ECD14BD29C400E92184 /* PRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97258ECC14BD29C400E92184 /* PRPViewController.m */; };
 		97258ED014BD29C400E92184 /* PRPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97258ECE14BD29C400E92184 /* PRPViewController.xib */; };
+		97258ED814BD2D6500E92184 /* PRPRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 97258ED714BD2D6500E92184 /* PRPRecipe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		97258EB914BD29C400E92184 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		97258EBB14BD29C400E92184 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		97258EBD14BD29C400E92184 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		97258EC114BD29C400E92184 /* Recipes-Info.plist */ = {isa = PBXFileReference; path = "Recipes-Info.plist"; sourceTree = "<group>"; };
+		97258EC114BD29C400E92184 /* Recipes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Recipes-Info.plist"; sourceTree = "<group>"; };
 		97258EC314BD29C400E92184 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		97258EC514BD29C400E92184 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		97258EC714BD29C400E92184 /* Recipes-Prefix.pch */ = {isa = PBXFileReference; path = "Recipes-Prefix.pch"; sourceTree = "<group>"; };
-		97258EC814BD29C400E92184 /* PRPAppDelegate.h */ = {isa = PBXFileReference; path = PRPAppDelegate.h; sourceTree = "<group>"; };
+		97258EC714BD29C400E92184 /* Recipes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recipes-Prefix.pch"; sourceTree = "<group>"; };
+		97258EC814BD29C400E92184 /* PRPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPAppDelegate.h; sourceTree = "<group>"; };
 		97258EC914BD29C400E92184 /* PRPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPAppDelegate.m; sourceTree = "<group>"; };
-		97258ECB14BD29C400E92184 /* PRPViewController.h */ = {isa = PBXFileReference; path = PRPViewController.h; sourceTree = "<group>"; };
+		97258ECB14BD29C400E92184 /* PRPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPViewController.h; sourceTree = "<group>"; };
 		97258ECC14BD29C400E92184 /* PRPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPViewController.m; sourceTree = "<group>"; };
 		97258ECF14BD29C400E92184 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PRPViewController.xib; sourceTree = "<group>"; };
+		97258ED614BD2D6500E92184 /* PRPRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPRecipe.h; sourceTree = "<group>"; };
+		97258ED714BD2D6500E92184 /* PRPRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPRecipe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		97258EBF14BD29C400E92184 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				97258ED614BD2D6500E92184 /* PRPRecipe.h */,
+				97258ED714BD2D6500E92184 /* PRPRecipe.m */,
 				97258EC814BD29C400E92184 /* PRPAppDelegate.h */,
 				97258EC914BD29C400E92184 /* PRPAppDelegate.m */,
 				97258ECB14BD29C400E92184 /* PRPViewController.h */,
@@ -165,6 +170,7 @@
 				97258EC614BD29C400E92184 /* main.m in Sources */,
 				97258ECA14BD29C400E92184 /* PRPAppDelegate.m in Sources */,
 				97258ECD14BD29C400E92184 /* PRPViewController.m in Sources */,
+				97258ED814BD2D6500E92184 /* PRPRecipe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,9 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    PRPRecipe *recipe = [[PRPRecipe alloc] init];
+    recipe.title = @"Chocolate Chip Cookies";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[PRPViewController alloc] initWithNibName:@"PRPViewController" bundle:nil];
+    self.viewController.recipe = recipe;
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
