@@ -36,6 +36,7 @@
 		97258ED614BD2D6500E92184 /* PRPRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPRecipe.h; sourceTree = "<group>"; };
 		97258ED714BD2D6500E92184 /* PRPRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPRecipe.m; sourceTree = "<group>"; };
 		97B3F56514C346C400DC8F95 /* IMG_1948.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1948.jpg; sourceTree = "<group>"; };
+		97B3F56914C386AF00DC8F95 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		97258EAA14BD29C400E92184 = {
 			isa = PBXGroup;
 			children = (
+				97B3F56914C386AF00DC8F95 /* README.md */,
 				97258EBF14BD29C400E92184 /* Recipes */,
 				97258EB814BD29C400E92184 /* Frameworks */,
 				97258EB614BD29C400E92184 /* Products */,
