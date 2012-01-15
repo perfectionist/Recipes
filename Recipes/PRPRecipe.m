@@ -10,7 +10,9 @@
 
 @implementation PRPRecipe
 
-@synthesize title;
+@synthesize title = _title;
+@synthesize directions = _directions;
+@synthesize image = _image;
 
 - (id)init
 {

@@ -15,7 +15,12 @@
 @implementation PRPViewController
 
 @synthesize recipeTitle = _recipeTitle;
+@synthesize directionsView = _directionsView;
+@synthesize imageView = _imageView;
+
 @synthesize recipe = _recipe;
+
+#pragma mark - Memory Management
 
 - (void)viewDidLoad
 {
@@ -26,7 +31,9 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
+    self.directionsView = nil;
+    self.recipeTitle = nil;
+    self.imageView = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -37,6 +44,10 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.recipeTitle.text = self.recipe.title;
+    self.directionsView.text = self.recipe.directions;
+    if(nil != self.recipe.image) {
+        self.imageView.image = self.recipe.image;
+    }
 }
 
 @end

@@ -16,6 +16,7 @@
 		97258ECD14BD29C400E92184 /* PRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97258ECC14BD29C400E92184 /* PRPViewController.m */; };
 		97258ED014BD29C400E92184 /* PRPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97258ECE14BD29C400E92184 /* PRPViewController.xib */; };
 		97258ED814BD2D6500E92184 /* PRPRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 97258ED714BD2D6500E92184 /* PRPRecipe.m */; };
+		97B3F56614C346C400DC8F95 /* IMG_1948.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97B3F56514C346C400DC8F95 /* IMG_1948.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		97258ECF14BD29C400E92184 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PRPViewController.xib; sourceTree = "<group>"; };
 		97258ED614BD2D6500E92184 /* PRPRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPRecipe.h; sourceTree = "<group>"; };
 		97258ED714BD2D6500E92184 /* PRPRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPRecipe.m; sourceTree = "<group>"; };
+		97B3F56514C346C400DC8F95 /* IMG_1948.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1948.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		97258EBF14BD29C400E92184 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				97B3F56514C346C400DC8F95 /* IMG_1948.jpg */,
 				97258ED614BD2D6500E92184 /* PRPRecipe.h */,
 				97258ED714BD2D6500E92184 /* PRPRecipe.m */,
 				97258EC814BD29C400E92184 /* PRPAppDelegate.h */,
@@ -157,6 +160,7 @@
 			files = (
 				97258EC414BD29C400E92184 /* InfoPlist.strings in Resources */,
 				97258ED014BD29C400E92184 /* PRPViewController.xib in Resources */,
+				97B3F56614C346C400DC8F95 /* IMG_1948.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +286,7 @@
 				97258ED514BD29C400E92184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

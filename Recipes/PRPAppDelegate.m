@@ -18,7 +18,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     PRPRecipe *recipe = [[PRPRecipe alloc] init];
+    NSString *directions = @"Put the flour and other dry ingredients in a bowl \
+    stir in the eggs until evenly moist. Add chocolate chips and stir in until even. \
+    Place tablespoon sized portions on greased cookie sheet and bake at 350° for \
+    6 minutes.";
     recipe.title = @"Chocolate Chip Cookies";
+    recipe.directions = directions;
+    recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[PRPViewController alloc] initWithNibName:@"PRPViewController" bundle:nil];
