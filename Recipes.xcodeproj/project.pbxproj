@@ -16,6 +16,8 @@
 		97258ECD14BD29C400E92184 /* PRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97258ECC14BD29C400E92184 /* PRPViewController.m */; };
 		97258ED014BD29C400E92184 /* PRPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97258ECE14BD29C400E92184 /* PRPViewController.xib */; };
 		97258ED814BD2D6500E92184 /* PRPRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 97258ED714BD2D6500E92184 /* PRPRecipe.m */; };
+		9799D10E14C46D0F00930BCC /* PRPRecipesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9799D10C14C46D0F00930BCC /* PRPRecipesListViewController.m */; };
+		9799D10F14C46D0F00930BCC /* PRPRecipesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9799D10D14C46D0F00930BCC /* PRPRecipesListViewController.xib */; };
 		97B3F56614C346C400DC8F95 /* IMG_1948.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97B3F56514C346C400DC8F95 /* IMG_1948.jpg */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,9 @@
 		97258ECF14BD29C400E92184 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PRPViewController.xib; sourceTree = "<group>"; };
 		97258ED614BD2D6500E92184 /* PRPRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPRecipe.h; sourceTree = "<group>"; };
 		97258ED714BD2D6500E92184 /* PRPRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPRecipe.m; sourceTree = "<group>"; };
+		9799D10B14C46D0F00930BCC /* PRPRecipesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPRecipesListViewController.h; sourceTree = "<group>"; };
+		9799D10C14C46D0F00930BCC /* PRPRecipesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPRecipesListViewController.m; sourceTree = "<group>"; };
+		9799D10D14C46D0F00930BCC /* PRPRecipesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRPRecipesListViewController.xib; sourceTree = "<group>"; };
 		97B3F56514C346C400DC8F95 /* IMG_1948.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1948.jpg; sourceTree = "<group>"; };
 		97B3F56914C386AF00DC8F95 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +98,9 @@
 				97258ECC14BD29C400E92184 /* PRPViewController.m */,
 				97258ECE14BD29C400E92184 /* PRPViewController.xib */,
 				97258EC014BD29C400E92184 /* Supporting Files */,
+				9799D10B14C46D0F00930BCC /* PRPRecipesListViewController.h */,
+				9799D10C14C46D0F00930BCC /* PRPRecipesListViewController.m */,
+				9799D10D14C46D0F00930BCC /* PRPRecipesListViewController.xib */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				97258EC414BD29C400E92184 /* InfoPlist.strings in Resources */,
 				97258ED014BD29C400E92184 /* PRPViewController.xib in Resources */,
 				97B3F56614C346C400DC8F95 /* IMG_1948.jpg in Resources */,
+				9799D10F14C46D0F00930BCC /* PRPRecipesListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				97258ECA14BD29C400E92184 /* PRPAppDelegate.m in Sources */,
 				97258ECD14BD29C400E92184 /* PRPViewController.m in Sources */,
 				97258ED814BD2D6500E92184 /* PRPRecipe.m in Sources */,
+				9799D10E14C46D0F00930BCC /* PRPRecipesListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,3 +19,5 @@ This is the introduction to the Recipe application.  Chapter 4 sets up the basic
 
 Version tag is **v1.0**
 
+
+<script src="https://gist.github.com/1621809.js?file=lazyRecipe.m"></script>
