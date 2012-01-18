@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PRPRecipe.h"
 #import "PRPRecipesListViewController.h"
+#import "PRPRecipesSource.h"
 
 @class PRPViewController;
 

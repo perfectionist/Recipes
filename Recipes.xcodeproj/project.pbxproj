@@ -19,6 +19,7 @@
 		9799D10E14C46D0F00930BCC /* PRPRecipesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9799D10C14C46D0F00930BCC /* PRPRecipesListViewController.m */; };
 		9799D10F14C46D0F00930BCC /* PRPRecipesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9799D10D14C46D0F00930BCC /* PRPRecipesListViewController.xib */; };
 		97B3F56614C346C400DC8F95 /* IMG_1948.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97B3F56514C346C400DC8F95 /* IMG_1948.jpg */; };
+		97BA03E814C72777002C20EA /* PRPRecipesSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA03E714C72776002C20EA /* PRPRecipesSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,9 @@
 		9799D10D14C46D0F00930BCC /* PRPRecipesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRPRecipesListViewController.xib; sourceTree = "<group>"; };
 		97B3F56514C346C400DC8F95 /* IMG_1948.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1948.jpg; sourceTree = "<group>"; };
 		97B3F56914C386AF00DC8F95 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		97BA03E414C6F881002C20EA /* PRPRecipesListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPRecipesListDataSource.h; sourceTree = "<group>"; };
+		97BA03E614C72776002C20EA /* PRPRecipesSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPRecipesSource.h; sourceTree = "<group>"; };
+		97BA03E714C72776002C20EA /* PRPRecipesSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPRecipesSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,10 @@
 				97258EC014BD29C400E92184 /* Supporting Files */,
 				9799D10B14C46D0F00930BCC /* PRPRecipesListViewController.h */,
 				9799D10C14C46D0F00930BCC /* PRPRecipesListViewController.m */,
+				97BA03E414C6F881002C20EA /* PRPRecipesListDataSource.h */,
 				9799D10D14C46D0F00930BCC /* PRPRecipesListViewController.xib */,
+				97BA03E614C72776002C20EA /* PRPRecipesSource.h */,
+				97BA03E714C72776002C20EA /* PRPRecipesSource.m */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 				97258ECD14BD29C400E92184 /* PRPViewController.m in Sources */,
 				97258ED814BD2D6500E92184 /* PRPRecipe.m in Sources */,
 				9799D10E14C46D0F00930BCC /* PRPRecipesListViewController.m in Sources */,
+				97BA03E814C72777002C20EA /* PRPRecipesSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

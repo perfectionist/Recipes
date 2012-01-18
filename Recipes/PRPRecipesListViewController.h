@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PRPRecipesListDataSource.h"
 
 @interface PRPRecipesListViewController : UITableViewController
 
-@property (retain) NSArray *recipes;
+@property(nonatomic, strong) id <PRPRecipesListDataSource> dataSource;
 
 @end

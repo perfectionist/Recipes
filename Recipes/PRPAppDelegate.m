@@ -16,57 +16,6 @@
 
 @synthesize recipes = _recipes;
 
-- (NSArray *)recipes {
-    if(nil == _recipes) {
-        NSMutableArray *localRecipes = [NSMutableArray array];
-        PRPRecipe *recipe = [[PRPRecipe alloc] init];
-        recipe.directions = @"0 - Put some stuff in, and the other stuff, then stir"; recipe.title = @"0 - One Fine Food";
-        recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
-        [localRecipes addObject:recipe];
-
-        recipe = [[PRPRecipe alloc] init];
-        recipe.directions = @"1 - Put some stuff in, and the other stuff, then stir"; recipe.title = @"1 - One Fine Food";
-        recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
-        [localRecipes addObject:recipe];
-        
-        recipe = [[PRPRecipe alloc] init];
-        recipe.directions = @"2 - Put some stuff in, and the other stuff, then stir";
-        recipe.title = @"2 - One Fine Food";
-        recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
-        [localRecipes addObject:recipe];
-        
-        recipe = [[PRPRecipe alloc] init];
-        recipe.directions = @"3 - Put some stuff in, and the other stuff, then stir";
-        recipe.title = @"3 - One Fine Food";
-        recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
-        [localRecipes addObject:recipe];
-        
-        recipe = [[PRPRecipe alloc] init];
-        recipe.directions = @"4 - Put some stuff in, and the other stuff, then stir";
-        recipe.title = @"4 - One Fine Food";
-        recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
-        [localRecipes addObject:recipe];
-        
-        recipe = [[PRPRecipe alloc] init];
-        recipe.directions = @"5 - Put some stuff in, and the other stuff, then stir";
-        recipe.title = @"5 - One Fine Food";
-        recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
-        [localRecipes addObject:recipe];
-
-        NSString *directions = @"Put the flour and other dry ingredients in a bowl, \
-        stir in the eggs until evenly moist. Add chocolate chips and stir in until even. \
-        Place tablespoon sized portions on greased cookie sheet and bake at 350Â° for \
-        6 minutes.";
-        recipe = [[PRPRecipe alloc] init];
-        recipe.title = @"Chocolate Chip Cookies";
-        recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
-        recipe.directions = directions;
-        [localRecipes addObject:recipe];
-        
-        self.recipes = localRecipes;
-    }
-    return _recipes;
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -74,7 +23,7 @@
     // Override point for customization after application launch.
     self.viewController = [[PRPRecipesListViewController alloc] initWithNibName:@"PRPRecipesListViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
-    self.viewController.recipes = self.recipes;
+    self.viewController.dataSource = [[PRPRecipesSource alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }
