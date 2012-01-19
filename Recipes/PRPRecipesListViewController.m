@@ -94,14 +94,18 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [[self.dataSource recipeAtIndex:indexPath.row] title];
-    cell.imageView.image = [[self.dataSource recipeAtIndex:indexPath.row] image];
+    PRPRecipe *recipe = [self.dataSource recipeAtIndex:indexPath.row];
+    cell.textLabel.text = [recipe title];
+    cell.imageView.image = [recipe image];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@",
+                                 [recipe preparationTime],
+                                 NSLocalizedString(@"minutes", nil)];
     return cell;
 }
 

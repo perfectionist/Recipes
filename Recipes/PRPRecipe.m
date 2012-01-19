@@ -13,6 +13,7 @@
 @synthesize title = _title;
 @synthesize directions = _directions;
 @synthesize image = _image;
+@synthesize preparationTime = _preparationTime;
 
 - (id)init
 {

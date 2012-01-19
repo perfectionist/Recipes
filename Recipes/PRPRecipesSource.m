@@ -25,35 +25,41 @@
         PRPRecipe *recipe = [[PRPRecipe alloc] init];
         recipe.directions = @"0 - Put some stuff in, and the other stuff, then stir"; recipe.title = @"0 - One Fine Food";
         recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
+        recipe.preparationTime = [NSNumber numberWithInt:30];
         [localRecipes addObject:recipe];
 
         recipe = [[PRPRecipe alloc] init];
         recipe.directions = @"1 - Put some stuff in, and the other stuff, then stir"; recipe.title = @"1 - One Fine Food";
         recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
+        recipe.preparationTime = [NSNumber numberWithInt:31];
         [localRecipes addObject:recipe];
 
         recipe = [[PRPRecipe alloc] init];
         recipe.directions = @"2 - Put some stuff in, and the other stuff, then stir";
         recipe.title = @"2 - One Fine Food";
         recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
+        recipe.preparationTime = [NSNumber numberWithInt:32];
         [localRecipes addObject:recipe];
 
         recipe = [[PRPRecipe alloc] init];
         recipe.directions = @"3 - Put some stuff in, and the other stuff, then stir";
         recipe.title = @"3 - One Fine Food";
         recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
+        recipe.preparationTime = [NSNumber numberWithInt:33];
         [localRecipes addObject:recipe];
 
         recipe = [[PRPRecipe alloc] init];
         recipe.directions = @"4 - Put some stuff in, and the other stuff, then stir";
         recipe.title = @"4 - One Fine Food";
         recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
+        recipe.preparationTime = [NSNumber numberWithInt:34];
         [localRecipes addObject:recipe];
 
         recipe = [[PRPRecipe alloc] init];
         recipe.directions = @"5 - Put some stuff in, and the other stuff, then stir";
         recipe.title = @"5 - One Fine Food";
         recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
+        recipe.preparationTime = [NSNumber numberWithInt:35];
         [localRecipes addObject:recipe];
 
         NSString *directions = @"Put the flour and other dry ingredients in a bowl, \
@@ -64,6 +70,7 @@
         recipe.title = @"Chocolate Chip Cookies";
         recipe.image = [UIImage imageNamed:@"IMG_1948.jpg"];
         recipe.directions = directions;
+        recipe.preparationTime = [NSNumber numberWithInt:36];
         [localRecipes addObject:recipe];
 
         self.recipes = localRecipes;
