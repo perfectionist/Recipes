@@ -101,6 +101,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text = [[self.dataSource recipeAtIndex:indexPath.row] title];
+    cell.imageView.image = [[self.dataSource recipeAtIndex:indexPath.row] image];
     return cell;
 }
 
