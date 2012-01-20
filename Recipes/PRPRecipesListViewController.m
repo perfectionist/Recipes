@@ -155,6 +155,7 @@
 {
     PRPViewController *detailVC = [[PRPViewController alloc] initWithNibName:@"PRPViewController" bundle:nil];
     detailVC.recipe = [self.dataSource recipeAtIndex:indexPath.row];
+    detailVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:detailVC animated:YES completion:nil];
 }
 
