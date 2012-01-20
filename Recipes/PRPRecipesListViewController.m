@@ -153,6 +153,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    PRPViewController *detailVC = [[PRPViewController alloc] initWithNibName:@"PRPViewController" bundle:nil];
+    detailVC.recipe = [self.dataSource recipeAtIndex:indexPath.row];
+    [self presentViewController:detailVC animated:YES completion:nil];
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];

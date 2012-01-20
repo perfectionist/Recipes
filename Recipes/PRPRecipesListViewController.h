@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PRPRecipesListDataSource.h"
+#import "PRPViewController.h"
 
 @interface PRPRecipesListViewController : UITableViewController
 
