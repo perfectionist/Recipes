@@ -17,6 +17,8 @@
 @synthesize recipeTitle = _recipeTitle;
 @synthesize directionsView = _directionsView;
 @synthesize imageView = _imageView;
+@synthesize prepTime = _prepTime;
+@synthesize formatter = _formatter;
 
 @synthesize recipe = _recipe;
 
@@ -25,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.formatter = [[NSNumberFormatter alloc] init];
 }
 
 - (void)viewDidUnload
@@ -48,6 +50,11 @@
     if(nil != self.recipe.image) {
         self.imageView.image = self.recipe.image;
     }
+    self.prepTime.text =[self.formatter stringFromNumber:self.recipe.preparationTime];
+}
+
+- (IBAction)dismiss:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
