@@ -57,6 +57,14 @@ Datasource added to application mainly to extend application so we could delete 
 
 Version tag is **v2.0**
 
+## Git Lesson ##
+
+Version tags where not showing up on [github][6].  I had to use
+
+    git push --tags
+
+to get the tags to show up.
+
 ## Style and Convention ##
 
 The accepted style now is to add an underscore to the ivar name in the `@synthesize` statement.  The was confirmed by the authors of the [book][1] and they site that even in Apple's templates you will see this convention followed.  In the book they slack off so I asked the question.
